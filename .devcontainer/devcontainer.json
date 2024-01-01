@@ -3,29 +3,38 @@
     "dockerfile": "Dockerfile"
   },
   "init": true,
-  "mounts": [
-    {
-      "source": "${devcontainerId}-shellhistory",
-      "target": "/dc/shellhistory",
-      "type": "volume"
-    }
-  ],
-  "remoteUser": "vscode",
   "features": {
-    "ghcr.io/devcontainers/features/common-utils:2": {
-      "installZsh": false,
-      "installOhMyZsh": false,
-      "username": "vscode"
-    },
     "ghcr.io/devcontainers/features/github-cli:1": {},
-    "ghcr.io/joshuanianji/devcontainer-features/github-cli-persistence:0": {}
+    "ghcr.io/joshuanianji/devcontainer-features/github-cli-persistence:0": {},
+    "ghcr.io/stuartleeks/dev-container-features/shell-history:0": {}
   },
   "customizations": {
     "vscode": {
       "extensions": [
+        "EditorConfig.EditorConfig",
+        "eamodio.gitlens",
+        "Shopify.ruby-extensions-pack",
+        "sissel.shopify-liquid",
         "asciidoctor.asciidoctor-vscode",
-        "EditorConfig.EditorConfig"
-      ]
+        "-dbaeumer.vscode-eslint"
+      ],
+      "settings": {
+        "[ruby]": {
+            "editor.defaultFormatter": "Shopify.ruby-lsp",
+            "editor.formatOnSave": true,
+            "editor.formatOnType": true,
+            "editor.tabSize": 2,
+            "editor.insertSpaces": true,
+            "files.trimTrailingWhitespace": true,
+            "files.insertFinalNewline": true,
+            "files.trimFinalNewlines": true,
+            "editor.rulers": [
+                120
+            ],
+            "editor.semanticHighlighting.enabled": true
+        },
+        "workbench.colorTheme": "Spinel"
+      }
     }
   }
 }

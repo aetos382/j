@@ -1,7 +1,8 @@
-FROM ruby:3-bookworm
+FROM mcr.microsoft.com/devcontainers/ruby:3-bookworm
 
 RUN apt-get update && \
-    apt-get install --yes \
+    apt-get upgrade --yes --no-install-recommends --auto-remove --purge && \
+    apt-get install --yes --no-install-recommends \
       build-essential \
       locales
 
@@ -14,4 +15,4 @@ ENV LANG="ja_JP.UTF-8" \
     TZ="Asia/Tokyo"
 
 RUN gem update --system
-RUN gem install bundler
+RUN gem install bundler jekyll
