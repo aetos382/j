@@ -1,12 +1,6 @@
 #!/usr/bin/bash
 
-# Install the version of Bundler.
-if [ -f Gemfile.lock ] && grep "BUNDLED WITH" Gemfile.lock > /dev/null; then
-    cat Gemfile.lock | tail -n 2 | grep -C2 "BUNDLED WITH" | tail -n 1 | xargs gem install bundler -v
-fi
+printenv
 
-# If there's a Gemfile, then run `bundle install`
-# It's assumed that the Gemfile will install Jekyll too
-if [ -f Gemfile ]; then
-    bundle install
-fi
+export HISTFILE=/dc/shellhistory/.bash_history
+export PROMPT_COMMAND='history -a'
