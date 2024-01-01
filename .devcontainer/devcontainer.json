@@ -32,8 +32,7 @@
                 120
             ],
             "editor.semanticHighlighting.enabled": true
-        },
-        "workbench.colorTheme": "Spinel"
+        }
       }
     }
   }
