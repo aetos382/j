@@ -8,12 +8,15 @@
     "ghcr.io/joshuanianji/devcontainer-features/github-cli-persistence:0": {},
     "ghcr.io/stuartleeks/dev-container-features/shell-history:0": {}
   },
+  "containerEnv": {
+    "GEM_HOME": "/home/vscode/.gems"
+  },
   "customizations": {
     "vscode": {
       "extensions": [
         "EditorConfig.EditorConfig",
         "eamodio.gitlens",
-        "Shopify.ruby-extensions-pack",
+        "Shopify.ruby-lsp",
         "sissel.shopify-liquid",
         "asciidoctor.asciidoctor-vscode",
         "-dbaeumer.vscode-eslint"
