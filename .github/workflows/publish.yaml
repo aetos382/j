@@ -33,7 +33,7 @@ jobs:
         uses: actions/configure-pages@v4
 
       - name: Setup problem matchers
-        run: echo "::add-matcher::jekyll-problem-matcher.json"
+        run: echo "::add-matcher::.github/jekyll-problem-matcher.json"
 
       - name: Build with Jekyll
         run: bundle exec jekyll build --lsi
