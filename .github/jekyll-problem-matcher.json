@@ -19,6 +19,9 @@
         },
         {
           "regexp": "^\\s*More info and automated migrator:\\s*(.+)\\s*$"
+        },
+        {
+          "regexp": "^\\s*$"
         }
       ]
     },
