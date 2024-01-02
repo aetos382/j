@@ -40,7 +40,8 @@ jobs:
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
-        working-directory: blog
+        with:
+          path: blog/_site
 
   deploy:
     environment:
