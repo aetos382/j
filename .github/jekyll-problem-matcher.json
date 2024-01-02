@@ -1,0 +1,20 @@
+{
+  "problemMatcher": [
+    {
+      "owner": "jekyll",
+      "severity": "warning",
+      "pattern": [
+        {
+          "regexp": "^DEPRECATION WARNING:\\s+(.+)\\s*$",
+          "message": 1
+        },
+        {
+          "regexp": "^\\s*(.+)\\s+(\\d+):(\\d+)\\s+(.+)\\s*$",
+          "file": 1,
+          "line": 2,
+          "column": 3
+        }
+      ]
+    }
+  ]
+}
