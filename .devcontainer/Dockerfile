@@ -3,7 +3,7 @@ FROM mcr.microsoft.com/devcontainers/base:bookworm
 RUN apt-get update && \
     apt-get upgrade --yes --no-install-recommends --auto-remove --purge && \
     apt-get install --yes --no-install-recommends \
-      ruby-full \
+      "ruby-full=1:3.1" \
       build-essential \
       locales
 
