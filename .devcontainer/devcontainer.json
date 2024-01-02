@@ -35,6 +35,9 @@
                 120
             ],
             "editor.semanticHighlighting.enabled": true
+        },
+        "asciidoc.preview.asciidoctorAttributes": {
+          "skip-front-matter": ""
         }
       }
     }
