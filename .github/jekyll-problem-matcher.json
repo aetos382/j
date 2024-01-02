@@ -1,12 +1,15 @@
 {
   "problemMatcher": [
     {
-      "owner": "jekyll2",
+      "owner": "jekyll-multiline",
       "severity": "warning",
       "pattern": [
         {
           "regexp": "^DEPRECATION WARNING:\\s*(.+)\\s*$",
           "message": 1
+        },
+        {
+          "regexp": "^\\s*$"
         }
       ]
     },
