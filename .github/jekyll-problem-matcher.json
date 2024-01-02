@@ -1,7 +1,7 @@
 {
   "problemMatcher": [
     {
-      "owner": "jekyll-multiline",
+      "owner": "jekyll",
       "severity": "warning",
       "pattern": [
         {
@@ -34,46 +34,6 @@
         },
         {
           "regexp": "^\\s*╵\\s*$"
-        },
-        {
-          "regexp": "^\\s*(.+)\\s+(\\d+):(\\d+)\\s+(.+)\\s*$",
-          "file": 1,
-          "line": 2,
-          "column": 3
-        }
-      ]
-    },
-    {
-      "owner": "jekyll",
-      "severity": "warning",
-      "pattern": [
-        {
-          "regexp": "^DEPRECATION WARNING:\\s*(.+)\\s*$",
-          "message": 1
-        },
-        {
-          "regexp": "^\\s*$"
-        },
-        {
-          "regexp": "^\\s*Recommendation: (.+)\\s*$"
-        },
-        {
-          "regexp": "^\\s*$"
-        },
-        {
-          "regexp": "^\\s*More info and automated migrator: (.+)\\s*$"
-        },
-        {
-          "regexp": "^\\s*╷\\s*$"
-        },
-        {
-          "regexp": "^\\s*(\\d+)\\s*│\\s*(.+)\\s*$"
-        },
-        {
-          "regexp": "^\\s*│.*\\s*$"
-        },
-        {
-          "regexp": "^\\s*╷\\s*$"
         },
         {
           "regexp": "^\\s*(.+)\\s+(\\d+):(\\d+)\\s+(.+)\\s*$",
