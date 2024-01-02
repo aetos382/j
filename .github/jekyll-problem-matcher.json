@@ -1,6 +1,16 @@
 {
   "problemMatcher": [
     {
+      "owner": "jekyll2",
+      "severity": "warning",
+      "pattern": [
+        {
+          "regexp": "^DEPRECATION WARNING:\\s*(.+)\\s*$",
+          "message": 1
+        }
+      ]
+    },
+    {
       "owner": "jekyll",
       "severity": "warning",
       "pattern": [
