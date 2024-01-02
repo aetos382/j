@@ -10,6 +10,9 @@
         },
         {
           "regexp": "^\\s*$"
+        },
+        {
+          "regexp": "^\\s*Recommendation:\\s*(.+)\\s*$"
         }
       ]
     },
